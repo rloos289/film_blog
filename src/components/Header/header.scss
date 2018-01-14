@@ -1,0 +1,17 @@
+.header {
+  background-color: darkorchid;
+  padding-bottom: 15px;
+
+  &__sitename {
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  &__nav {
+    text-align: center;
+  }
+
+  &__link {
+    padding: 0 20px 0 20px;
+  }
+}

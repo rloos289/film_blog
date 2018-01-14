@@ -1,31 +1,18 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+
+import './header.scss';
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          MovieDev
-        </Link>
-      </h1>
+  <div className="header">
+    <h1 className="header__sitename">
+      <Link to="/">
+        MovieDev
+      </Link>
+    </h1>
+    <div className="header__nav">
+      <h3 className="d-inline header__link"><Link to="/about">About Me</Link></h3>
+      <h3 className="d-inline header__link"><Link to="/latest">Latest Post</Link></h3>
     </div>
   </div>
 )
